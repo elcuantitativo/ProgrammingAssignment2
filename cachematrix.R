@@ -49,6 +49,7 @@ cachemean <- function(x, ...) {
     m
 }
 
+# Testing
 x <- 1:20
 z <- makeVector(x)
 cachemean(z)
@@ -67,3 +68,8 @@ cacheSolve <- function(x, ...) {
     m_inv
 }
 
+# Testing
+x <- matrix(1:4, nrow=2)
+z <- makeCacheMatrix(x)
+cacheSolve(z)
+cacheSolve(z)
